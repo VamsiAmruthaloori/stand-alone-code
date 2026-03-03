@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-standalone-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	
 	<name>maven-standalone-application</name>
 
@@ -95,20 +95,18 @@
 	
 	
 	<distributionManagement>
-	
 	    <repository>
-	      <id>nexus</id>
-	      <name>icicibank-Snapshot Nexus Repository</name>
-	      <url>http://54.174.133.66:8081/repository/icicibank-Snapshot/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>icicibank-Release Nexus Repository </name>
 	      <url>http://54.174.133.66:8081/repository/icicibank-Release/</url>
-	    </snapshotRepository>
+	    </repository>
 	    
-	</distributionManagement>
+	    <snapshotRepository>
+	        <id>nexus</id>
+            <name>icicibank-Snapshot Nexus Repository</name>
+	        <url>http://54.174.133.66:8081/repository/icicibank-Snapshot/</url>	
+	    </snapshotRepository>
+	 </distributionManagement>
 	
 	<build>
 		<finalName>maven-standalone-application</finalName>
